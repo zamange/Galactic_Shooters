@@ -1,72 +1,21 @@
 package objects;
 
-public class Bomber implements ShipAttributes{
-    private static double health = 200;
-    private static double shield = 100;
-    private static int speed = 200;
-    private static double damage = 10;
-    private static  int width = 100;
-    private static int height = 80;
+import java.io.IOException;
 
-//    @Override
-//    public void Health() {
-//
-//
-//    }
-
-//    @Override
-//    public void Shield() {
-//
-//    }
-//
-//    @Override
-//    public void Speed() {
-//
-//    }
-//
-//    @Override
-//    public void Damage() {
-//
-//    }
-
-    @Override
-    public void FireRate() {
-
-    }
-
-    @Override
-    public void SpecialAbility() {
-
-    }
-
-    @Override
-    public void WeaponType() {
-
-    }
-
-
-
-    public static int getWidth() {
-        return width;
-    }
-
-    public static int getHeight() {
-        return height;
-    }
-
-    public static int getSpeed() {
-        return speed;
-    }
-
-    public static double getDamage() {
-        return damage;
-    }
-
-    public static double getHealth() {
-        return health;
-    }
-
-    public static double getShield() {
-        return shield;
+public class Bomber extends Spaceship {
+    public Bomber(double x, double y) throws IOException {
+        super(60, 20, "assets/Bomber-removebg-preview.png");
+        setWidth(100);
+        setHeight(100);
+        setHealth(200);
+        setShield(100);
+        setSpeed(100);
+        setDamage(50);
+        setFireRate(0.5);
+        setAgility("Low");
+        setSpecialAbility("Shield Boost");
+        setWeaponType("Bombs");
+        setArmor("Heavy");
+        setSize("Large");
     }
 }

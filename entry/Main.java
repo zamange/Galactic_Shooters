@@ -1,6 +1,8 @@
 package entry;
 
 import objects.Background;
+import objects.Bomber;
+import objects.Fighter;
 import objects.Spaceship;
 import render.Renderer;
 import update.Updater;
@@ -18,8 +20,12 @@ public class Main {
         widget.packWidget();
         widget.setVisible(true);
 
+
+
         boolean runGame = true;
-        new Spaceship(Widget.getFrameWidth() / 2 - (Spaceship.width / 2) , Widget.getFrameHeight() -150);
+//        new Spaceship(Widget.getFrameWidth() / 2 - (Spaceship.getWidth() / 2) , Widget.getFrameHeight() -150);
+        Bomber bomber = new Bomber(Widget.getFrameWidth() / 2 - 50, Widget.getFrameHeight() - 150); // Centered based on bomber width
+        Fighter fighter = new Fighter(Widget.getFrameWidth() / 2 + 50, Widget.getFrameHeight() - 250); // Slightly offset to the right
         new Background(0);
         new Background(-Widget.getFrameHeight());
 
