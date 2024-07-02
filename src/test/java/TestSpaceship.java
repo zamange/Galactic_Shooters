@@ -1,4 +1,3 @@
-package test;
 import objects.Bomber;
 import objects.Fighter;
 import org.testng.annotations.Test;
@@ -10,7 +9,7 @@ public class TestSpaceship {
 
     @Test
     public void testBomberAttributes() throws IOException {
-        Spaceship spaceship = new Spaceship(100, 100, "assets/Bomber-removebg-preview.png");
+        Spaceship spaceship = new Spaceship(100, 100, "src/main/java/assets/Bomber-removebg-preview.png");
         Bomber bomber = new Bomber(200, 200);
         System.out.println("Bomber created at position (" + bomber.getX() + ", " + bomber.getY() + ")");
         System.out.println("Bomber Health: " + bomber.getHealth());
@@ -28,7 +27,7 @@ public class TestSpaceship {
 
     @Test
     public void testFighterAttributes() throws IOException {
-        Spaceship spaceship = new Spaceship(100, 100, "assets/Spaceship.png");
+        Spaceship spaceship = new Spaceship(100, 100, "src/main/java/assets/Spaceship.png");
         Fighter fighter = new Fighter(80, 80);
         System.out.println("Fighter created at position (" + fighter.getX() + ", " + fighter.getY() + ")");
         System.out.println("Fighter Health: " + fighter.getHealth());
