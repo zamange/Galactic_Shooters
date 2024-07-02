@@ -27,7 +27,7 @@ public class Background implements Renderable, Updatable {
 
         this.y = y;
 
-        background = ImageIO.read(new File("assets/Galaxy.jpg"));
+        background = ImageIO.read(new File("src/main/java/assets/Galaxy.jpg"));
         Renderer.addRenderableObjects(this);
         Updater.addUpdatableObject(this);
     }
