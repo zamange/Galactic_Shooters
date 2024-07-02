@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Fighter extends Spaceship {
     public Fighter(double x, double y) throws IOException {
-        super(0, 0, "assets/Spaceship.png");
+        super(x, y, "assets/Spaceship.png");
         setWidth(80);
         setHeight(80);
         setHealth(100);

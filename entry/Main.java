@@ -25,7 +25,7 @@ public class Main {
         boolean runGame = true;
 //        new Spaceship(Widget.getFrameWidth() / 2 - (Spaceship.getWidth() / 2) , Widget.getFrameHeight() -150);
         Bomber bomber = new Bomber(Widget.getFrameWidth() / 2 - 50, Widget.getFrameHeight() - 150); // Centered based on bomber width
-        Fighter fighter = new Fighter(Widget.getFrameWidth() / 2 + 50, Widget.getFrameHeight() - 250); // Slightly offset to the right
+        Fighter fighter = new Fighter(Widget.getFrameWidth() / 2 - 40, 150); // Centered based on fighter width, opposite y position
         new Background(0);
         new Background(-Widget.getFrameHeight());
 

@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Bomber extends Spaceship {
     public Bomber(double x, double y) throws IOException {
-        super(60, 20, "assets/Bomber-removebg-preview.png");
+        super(x,y, "assets/Bomber-removebg-preview.png");
         setWidth(100);
         setHeight(100);
         setHealth(200);
