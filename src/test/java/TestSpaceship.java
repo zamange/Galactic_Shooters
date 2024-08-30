@@ -5,6 +5,8 @@ import objects.Spaceship;
 
 import java.io.IOException;
 
+//import java.io.IOException;
+
 public class TestSpaceship {
 
     @Test

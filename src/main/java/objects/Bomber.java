@@ -1,9 +1,11 @@
 package objects;
 
+//import java.io.IOException;
+
 import java.io.IOException;
 
 public class Bomber extends Spaceship {
-    public Bomber(double x, double y) throws IOException {
+    public Bomber(double x, double y)  throws IOException {
         super(60, 20, "src/main/java/assets/Bomber-removebg-preview.png");
         setWidth(100);
         setHeight(100);
