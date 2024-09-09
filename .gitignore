@@ -1,0 +1,16 @@
+# Ignore .idea folder and files
+/.idea/
+/target/classes/.idea/
+/target/classes/target/classes/.idea/
+
+# Ignore README.md
+/target/classes/README.md
+/target/classes/target/classes/README.md
+
+# Ignore assets
+/target/classes/assets/
+/target/classes/target/classes/assets/
+
+# Ignore pom.xml
+/target/classes/pom.xml
+/target/classes/target/classes/pom.xml
